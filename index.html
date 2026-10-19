@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>ILHA ROYALE — Battle Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud"><div class="top"><div><div class="logo">ILHA <em>ROYALE</em></div><div class="stat" style="margin-top:6px">MODO CLÁSSICO · <span id="phase">EM ESPERA</span></div></div><div class="stats"><div class="stat">ELIMS <b id="kills">0</b></div><div class="stat">ALVOS <b id="bots">8</b></div><div class="stat">FPS <b id="fps">--</b></div><div class="stat">LOOT <b id="lootCount">0</b></div></div></div><div id="cross"></div><div id="toast"></div><div class="eventbar" id="eventbar">🎃 HALLOWEEN · <span id="giftState">CHAPÉU GRÁTIS</span> <button id="giftBtn">RESGATAR</button></div>
+<div class="bottom"><div class="hpbox">VIDA <b id="hp">200</b> / 200<div class="hpbar"><span id="hpbar"></span></div><div style="margin-top:5px">COLETE <b id="armor">100</b>%</div></div><div class="gun"><small>ARMA · RIFLE VX</small><strong><span id="ammo">30</span> <small>/ ∞</small></strong><small id="stance">EM PÉ</small><br><small id="vehicleState">A PÉ · PET: PINGUIM</small></div></div></div>
+<div id="mobile"><div class="stick" id="stick"><div class="nub" id="nub"></div></div><div class="actions"><button class="act reload" id="reload">REC</button><button class="act ice" id="ice">❄ GELO</button><button class="act fire" id="fire">ATIRAR</button><button class="act jump" id="jump">↥ PULO</button><button class="act crouch" id="crouch">AGACH.</button><button class="act lootbtn" id="lootBtn">PEGAR</button><button class="act carbtn" id="carBtn">🚙</button><button class="act petbtn" id="petBtn">🐾</button></div></div>
+<div id="menu"><div class="card"><div class="tag">BATTLE ARENA · TEMPORADA CLÁSSICA</div><h1>ILHA<br><span>ROYALE</span></h1><p>Entre na ilha, enfrente bots e pratique movimentação: pulo, back jump, agachamento, rifle e parede de gelo. Visual de battle royale mobile clássico, com HUD adaptado para toque.</p><input id="nick" maxlength="16" value="Jogador" placeholder="Nome do jogador">
+<div style="display:flex;gap:8px;margin:5px 0 10px"><button id="modeBR" style="flex:1;padding:12px;border-radius:8px;background:#d8ff55;color:#15200b">BATTLE ROYALE</button><button id="modeCS" style="flex:1;padding:12px;border-radius:8px;background:#172b39;color:white;border:1px solid #567080">CONTRA SQUAD</button></div>
+<div style="background:#101d28;border:1px solid #344b5b;padding:12px;border-radius:9px;margin-bottom:10px">
+<div style="display:flex;justify-content:space-between;font-size:12px;font-weight:800"><label for="sens">SENSIBILIDADE</label><span id="sensVal" style="color:#d8ff55">75</span></div>
+<input id="sens" type="range" min="10" max="100" value="75" style="padding:0;margin:10px 0;accent-color:#d8ff55">
+<div style="display:flex;justify-content:space-between;font-size:11px;color:#aebdc8"><span>Precisão</span><span>Giro rápido</span></div>
+<label style="display:flex;align-items:center;gap:8px;font-size:12px;margin-top:10px"><input id="aimAssist" type="checkbox" checked style="width:auto;margin:0;accent-color:#d8ff55"> Assistência de mira / puxada para o alvo</label>
+</div>
+<button id="play">JOGAR AGORA →</button><p class="tiny desktopHint">PC: WASD mover · mouse mirar · clique atirar · Espaço pular/back jump · G gelo · E pegar loot · V planador · F kit médico · C agachar · R recarregar · Shift correr</p><p class="tiny">Protótipo offline de fã, inspirado em battle royale clássico. Mapa, pets, veículos, loot e evento são versões simplificadas; não é o Free Fire oficial.</p></div></div>
+<script src="game.js"></script>
+</body></html>

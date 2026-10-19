@@ -1,0 +1,14 @@
+ILHA ROYALE — protótipo offline
+
+Arquivos:
+- index.html: página principal
+- style.css: aparência e HUD
+- game.js: lógica do jogo
+
+Hospedagem na Netlify pelo celular:
+1. Extraia este ZIP para uma pasta.
+2. Abra https://app.netlify.com/drop no navegador.
+3. Envie a pasta extraída (ou arraste a pasta no computador). Se o celular não permitir enviar pasta, compacte a pasta conforme a opção de upload da Netlify ou use um gerenciador de arquivos.
+4. Aguarde a publicação e abra o endereço fornecido.
+
+Observação: protótipo offline; não é o Free Fire oficial. Recursos e gráficos são simplificados.
